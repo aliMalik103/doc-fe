@@ -58,6 +58,7 @@ const DocumentUpload: React.FC = () => {
   
     try {
       const response = await documentRequests.addDocumentApi(formData);
+      debugger
       if (!response.error) {
         toast.success('Document successfully submitted!');
         setFile(null);
@@ -66,7 +67,7 @@ const DocumentUpload: React.FC = () => {
         setIsChecked(false);
         setResult(response.data);
       } else {
-        toast.error(response.error || 'An error occurred while submitting the document');
+        toast.error( 'An error occurred while submitting the document');
       }
     } catch (error) {
       console.error(error);
