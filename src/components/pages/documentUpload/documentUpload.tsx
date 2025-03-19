@@ -58,7 +58,6 @@ const DocumentUpload: React.FC = () => {
   
     try {
       const response = await documentRequests.addDocumentApi(formData);
-      debugger
       if (!response.error) {
         toast.success('Document successfully submitted!');
         setFile(null);
