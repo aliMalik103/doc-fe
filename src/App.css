@@ -1,0 +1,20 @@
+/* App.css */
+.upload-section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.upload-section h1 {
+  margin-bottom: 20px;
+}
+
+.upload-section input[type="file"] {
+  margin-bottom: 20px;
+}
+
+.upload-section label {
+  display: block;
+  margin-top: 10px;
+}
