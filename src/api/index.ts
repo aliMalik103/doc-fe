@@ -5,7 +5,7 @@ import { apiUrl } from '../constant';
 const api = axios.create({
   baseURL: apiUrl,
   headers:{
-    'Content-Type': 'application/json; charset=utf-8',
+    // 'Content-Type': 'application/json; charset=utf-8',
     'Access-Control-Allow-Origin': '*',
     mode: 'no-cors',
     "user_deviceid":localStorage.getItem("user_deviceid"),
